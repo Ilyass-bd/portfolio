@@ -1,5 +1,4 @@
 import React from "react";
-
 import Image from "../assets/mylogo.png";
 import {
   FaGithub,
@@ -15,30 +14,27 @@ import { fadeIn } from "../variants";
 
 const Banner = () => {
   return (
-    <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
-      id="home"
-    >
+    <section className="min-h-[70vh] flex items-center" id="home">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
-          <div className="flex-1 text-center font-secondary lg:text-left ">
+        <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-x-8">
+          <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[45px] mx-auto font-bold leading-[0.8] lg:text-[80px] lg:flex"
+              className="text-[35px] font-bold leading-[0.8] lg:text-[60px]"
             >
-              ILYASS <span className="mx-3">BADREDDINE</span>
+              ILYASS <span className="mx-2">BADREDDINE</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold leading-[1]"
+              className="mb-4 text-[24px] lg:text-[48px] font-secondary font-semibold"
             >
-              <span className="text-white mr-4">I am a</span>
+              <span className="text-white mr-2">I am a</span>
               <TypeAnimation
                 sequence={[
                   "Fullstack Developer",
@@ -57,7 +53,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 mt-10 max-w-lg mx-auto lg:mx-0"
+              className="mb-6 mt-6 max-w-md mx-auto lg:mx-0 text-sm"
             >
               Passionate fullstack developer and graphic designer, driven by
               creativity and challenges. Let's build something extraordinary
@@ -68,11 +64,11 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+              className="flex gap-x-4 items-center mb-8 mx-auto lg:mx-0"
             >
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=ilyass4work@example.com&su=Let's%20work%20together!&body=Hi%20Ilyass,"
-                className="btn lg:btn-sm text-sm p-3 cursor-pointer"
+                className="btn text-xs p-2 cursor-pointer"
                 target="_blank"
               >
                 Contact me
@@ -90,7 +86,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              className="flex text-[16px] gap-x-4 mx-auto lg:mx-0"
             >
               <a href="https://github.com/Ilyass-bd">
                 <FaGithub />
@@ -110,16 +106,15 @@ const Banner = () => {
             </motion.div>
           </div>
 
-          {/* Updated image with animated background */}
           <motion.div
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="relative flex-1 max-w-[320px] lg:max-w-[482px] flex items-center justify-center overflow-hidden"
+            className="relative flex-1 max-w-[200px] lg:max-w-[300px] flex items-center justify-center m-[70px]" // Reduced max-width here
           >
-            <div className="absolute inset-10 bg-gradient-to-r from-[#171965] via-[#026189] to-[#6165d7] animate-gradient rounded-full mx-auto"></div>
-            <img src={Image} alt="Logo" className="relative z-10 mx-auto " />
+            <div className="absolute inset-8 bg-gradient-to-r from-[#171965] via-[#026189] to-[#6165d7] animate-gradient rounded-full mx-auto"></div>
+            <img src={Image} alt="Logo" className="relative z-10 mx-auto w-full h-auto" /> {/* Adjusted width and height */}
           </motion.div>
         </div>
       </div>
@@ -135,7 +130,6 @@ const Banner = () => {
             background-position: 0% 50%;
           }
         }
-
         .animate-gradient {
           animation: animateBackground 5s linear infinite;
         }
