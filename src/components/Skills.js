@@ -287,7 +287,7 @@ function Skills() {
               <div className="skills__data">
                 <div>
                   <span className="flex items-center space-x-2">
-                    <bsbo className="text-[#df41ff]" />
+                    <BsBookmarkCheck className="text-[#df41ff]" />
                     <h3 className="skills__name">XML</h3>
                   </span>
                   <span className="skills__level text-sm">Advanced</span>
