@@ -3,7 +3,6 @@ import Image from "../assets/mylogo.png";
 import {
   FaGithub,
   FaLinkedin,
-  FaDribbble,
   FaInstagram,
   FaBehance,
   FaTwitter,
@@ -14,25 +13,26 @@ import { fadeIn } from "../variants";
 
 const Banner = () => {
   return (
-    <section className="min-h-[70vh] flex items-center" id="home">
+    <section className="min-h-[10vh] flex items-center lg:mb-20" id="home">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-x-8">
-          <div className="flex-1 text-center font-secondary lg:text-left">
+        <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-x-8 mt-10 lg:ml-10">
+          <div className="flex-1 text-center font-primary lg:text-left">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[35px] font-bold leading-[0.8] lg:text-[60px]"
+              className="text-[25px] font-bold leading-[0.8] lg:text-[45px] mb-3"
             >
-              ILYASS <span className="mx-2">BADREDDINE</span>
+              <img src={Image} className="lg:hidden w-[100px]  mb-6 rounded-full mx-auto"/>
+              ILYASS <span className="md:text-[40px]">BADREDDINE</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-4 text-[24px] lg:text-[48px] font-secondary font-semibold"
+              className="mb-4 text-[18px] lg:text-[35px] font-secondary font-semibold"
             >
               <span className="text-white mr-2">I am a</span>
               <TypeAnimation
@@ -74,11 +74,11 @@ const Banner = () => {
                 Contact me
               </a>
               <a
-                href="/CV-last-version.pdf"
-                download="CV-last-version.pdf"
-                className="text-gradient btn-link cursor-pointer"
+                href="/Academic_CV.pdf"
+                download="Academic_CV.pdf"
+                className="text-lg lg:font-primary px-5 text-[#84bff4] btn-link cursor-pointer border-2 border-[#84bff4] rounded-lg hover:text-[#57ece7] hover:border-[#57ece7] duration-300"
               >
-                Download resume
+                Download CV
               </a>
             </motion.div>
             <motion.div
@@ -111,10 +111,14 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="relative flex-1 max-w-[200px] lg:max-w-[300px] flex items-center justify-center m-[70px]" // Reduced max-width here
+            className=" md:block lg:relative flex-1 max-w-[200px] lg:max-w-[300px] flex items-center justify-center m-[70px]" // Reduced max-width here
           >
-            <div className="absolute inset-8 bg-gradient-to-r from-[#171965] via-[#026189] to-[#6165d7] animate-gradient rounded-full mx-auto"></div>
-            <img src={Image} alt="Logo" className="relative z-10 mx-auto w-full h-auto" /> {/* Adjusted width and height */}
+            <div className="lg:absolute inset-8 bg-gradient-to-r from-[#171965] via-[#026189] to-[#6165d7] animate-gradient rounded-full mx-auto"></div>
+            <img
+              src={Image}
+              alt="Logo"
+              className="hidden md:block lg:relative z-10 mx-auto w-full h-auto"
+            />
           </motion.div>
         </div>
       </div>

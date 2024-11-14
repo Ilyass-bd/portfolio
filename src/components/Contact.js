@@ -33,7 +33,7 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-start items-center ml-40"
+            className="flex-1 flex justify-start items-center mx-auto lg:ml-[50px]"
           >
             <div>
               <h4 className="text-xl uppercase text-gradient font-medium mb-2 tracking-wide">

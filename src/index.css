@@ -6,9 +6,9 @@
   background: linear-gradient(
     92.23deg,
     #0a35d2 21.43%,
-    #1080db 50.63%,
-    #131ade 100%,
-    #3e84e7 117.04%
+    #043c6a 50.63%,
+    #1c21c1 100%,
+    #0962de 117.04%
   );
   box-shadow: 0px 4.42184px 107.23px rgba(1, 69, 171, 0.51);
 }
@@ -16,10 +16,10 @@
 .btn:hover {
   background: linear-gradient(
     92.23deg,
-    #082cac 21.43%,
-    #02567d 50.63%,
+    #2d54e0 21.43%,
+    #0a94d4 50.63%,
     #2342b2 100%,
-    #0026ae 117.04%
+    #0834d1 117.04%
   );
 }
 
@@ -51,7 +51,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-xl font-primary text-white font-medium;
   }
   .btn-sm {
     @apply h-[48px] px-4 text-sm;
@@ -69,4 +69,3 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
 }
-

@@ -7,7 +7,7 @@ import Img3 from "../assets/gym.png";
 
 const Work = () => {
   return (
-    <section className="section" id="work">
+    <section className="section lg:my-[300px] my-[100px]" id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-6">
           <motion.div
@@ -33,7 +33,7 @@ const Work = () => {
             <div className="group relative overflow-hidden rounded-xl mt-6 cursor-pointer">
               <img
                 src={Img1}
-                className="group-hover:scale-105 group-hover:blur-sm transition-all duration-500 h-48 w-3/4 rounded-lg cursor-pointer"
+                className="group-hover:scale-105 group-hover:blur-sm transition-all duration-500h-52 w-96 rounded-lg cursor-pointer"
               />
 
               <div className="absolute -bottom-full left-8 group-hover:bottom-16 transition-all duration-500 z-50">
@@ -61,7 +61,7 @@ const Work = () => {
             <div className="group relative overflow-hidden rounded-xl cursor-pointer">
               <img
                 src={Img2}
-                className="group-hover:scale-105 group-hover:blur-sm transition-all duration-500 h-48 w-3/4 rounded-lg cursor-pointer"
+                className="group-hover:scale-105 group-hover:blur-sm transition-all duration-500 h-52 w-96 rounded-lg cursor-pointer"
               />
               <div className="absolute -bottom-full left-8 group-hover:bottom-16 transition-all duration-500 z-50">
                 <span className="text-gradient text-sm">Web development</span>
@@ -79,7 +79,7 @@ const Work = () => {
             <div className="group relative overflow-hidden rounded-xl cursor-pointer sm:w-full">
               <img
                 src={Img3}
-                className="group-hover:scale-105 group-hover:blur-sm transition-all duration-500 h-48 w-3/4 rounded-lg cursor-pointer"
+                className="group-hover:scale-105 group-hover:blur-sm transition-all duration-500 h-52 w-96 rounded-lg cursor-pointer"
               />
               <div className="absolute -bottom-full left-8 group-hover:bottom-16 transition-all duration-500 z-50">
                 <span className="text-gradient text-sm">Web development</span>

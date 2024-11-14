@@ -2,9 +2,11 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: 'Poppins,Orbitron, sans-serif',
+      secondary: 'Rajdhani, sans-serif',
+      tertiary: 'Aldrich, sans-serif',
+      poppins: 'Poppins, sans-serif',
+      rubik: 'Rubik, sans-serif',
     },
     container: {
       padding: {
@@ -24,7 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/bluebg.jpg')",
-        about: "url('./assets/mylogo.png')",
+        about: "url('./assets/Profile2.png')",
         services: "url('./assets/srv.png')",
       },
     },

@@ -27,9 +27,9 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="section" id="services">
+    <section className="section my-20" id="services">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row ml-[10%]">
+        <div className="flex flex-col lg:flex-row ml-[10%] lg:mt-[400px]">
           <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
