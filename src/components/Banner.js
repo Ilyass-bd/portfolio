@@ -13,7 +13,7 @@ import { fadeIn } from "../variants";
 
 const Banner = () => {
   return (
-    <section className="min-h-[10vh] flex items-center lg:mb-20" id="home">
+    <section className="min-h-[10vh] flex items-center lg:mb-20 overflow-hidden" id="home">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-x-8 mt-10 lg:ml-10">
           <div className="flex-1 text-center font-primary lg:text-left">
@@ -22,10 +22,10 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[25px] font-bold leading-[0.8] lg:text-[45px] mb-3"
+              className="text-[25px] font-bold leading-[0.8] lg:text-[45px] mb-3 overflow-hidden"
             >
               <img src={Image} className="lg:hidden w-[100px]  mb-6 rounded-full mx-auto"/>
-              ILYASS <span className="md:text-[40px]">BADREDDINE</span>
+              ILYASS <span className="md:text-[40px] lg:text-[45px] overflow-hidden">BADREDDINE</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -74,8 +74,8 @@ const Banner = () => {
                 Contact me
               </a>
               <a
-                href="/Academic_CV.pdf"
-                download="Academic_CV.pdf"
+                href="/Mon-cv.pdf"
+                download="Mon-cv.pdf"
                 className="text-lg lg:font-primary px-5 text-[#84bff4] btn-link cursor-pointer border-2 border-[#84bff4] rounded-lg hover:text-[#57ece7] hover:border-[#57ece7] duration-300"
               >
                 Download CV
